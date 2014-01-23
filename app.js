@@ -76,7 +76,7 @@ app.get('/code/:code', function(req,res) {
 		statusMessage: statusGroup
 	});
 });
-app.get('/status/maintenance/', function (req,res) {
+app.get('/status/maintenance', function (req,res) {
 	var site = req.params.site ? req.params.site : 'The site';
 	res.render('status',{
 		statusGroup: 'maintenance', 
